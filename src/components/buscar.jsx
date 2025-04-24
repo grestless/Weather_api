@@ -8,13 +8,14 @@ export default function Buscar({ city, setCity, onSubmit, error, loading }) {
       component="form"
       autoComplete="off"
       onSubmit={onSubmit}
-    
+
     >
       <TextField
         id="city"
         label="Ciudad"
         variant="outlined"
         size="small"
+
         sx={{
           backgroundColor: 'transparent', // Color de fondo del campo de texto
            '&:hover':
@@ -30,6 +31,7 @@ export default function Buscar({ city, setCity, onSubmit, error, loading }) {
             color: error.error ? '#d32f2f' : '#76B39D', // Color del texto de ayuda
           },
         }}
+
         required
         value={city}
         onChange={(e) => setCity(e.target.value)}

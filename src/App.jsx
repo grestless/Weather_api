@@ -1,7 +1,10 @@
 import { Container, Typography } from '@mui/material';
 import { useState } from 'react';
 import axios from 'axios';
+
 import fondo from './img/fondo.jpg';
+
+
 import Buscar from './components/buscar.jsx';
 import ClimaInfo from './components/climaInfo.jsx';
 
@@ -59,6 +62,7 @@ export default function App() {
 
 
   return (
+
     <Container
       maxWidth="xs"
       sx={{
@@ -69,6 +73,7 @@ export default function App() {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         borderRadius: 2,
+
       }}
       component="main"
       elevation={3}
